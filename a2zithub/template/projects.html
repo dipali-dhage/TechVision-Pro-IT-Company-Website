@@ -1,0 +1,394 @@
+
+    {% include 'navbar.html' %} 
+
+    <!-- Page Header -->
+    <section class="page-header py-5" style="background: linear-gradient(135deg, var(--primary-blue), var(--primary-navy)); margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="page-title text-white">Our Projects</h1>
+                    <p class="page-subtitle text-white-50">Discover our portfolio of innovative solutions that drive business success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filter -->
+    <section class="project-filter py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="web">Web Development</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                        <button class="filter-btn" data-filter="cloud">Cloud Solutions</button>
+                        <button class="filter-btn" data-filter="ai">AI & ML</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid py-5">
+        <div class="container">
+            <div class="row" id="projectsContainer">
+                <!-- Project Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="E-commerce Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Development</div>
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-description">A comprehensive e-commerce solution with advanced features including payment integration, inventory management, and analytics dashboard.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="mobile">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" alt="Fitness App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Mobile Development</div>
+                            <h3 class="project-title">Fitness Tracking App</h3>
+                            <p class="project-description">Cross-platform mobile app for fitness tracking with real-time monitoring, social features, and personalized workout plans.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="cloud">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Cloud Infrastructure" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Cloud Solutions</div>
+                            <h3 class="project-title">Enterprise Cloud Migration</h3>
+                            <p class="project-description">Complete cloud infrastructure migration for a Fortune 500 company with 99.9% uptime and 40% cost reduction.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="ai">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI Chatbot" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">AI & ML</div>
+                            <h3 class="project-title">AI Customer Service Bot</h3>
+                            <p class="project-description">Intelligent chatbot system that handles customer inquiries with 95% accuracy and 24/7 availability.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">NLP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Analytics Dashboard" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Development</div>
+                            <h3 class="project-title">Business Analytics Dashboard</h3>
+                            <p class="project-description">Real-time analytics platform with interactive charts, data visualization, and automated reporting capabilities.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="mobile">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="Delivery App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Mobile Development</div>
+                            <h3 class="project-title">Food Delivery Platform</h3>
+                            <p class="project-description">Multi-vendor food delivery app with real-time tracking, payment processing, and restaurant management system.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">Google Maps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Case Studies</h2>
+                    <p class="section-subtitle">Real problems, innovative solutions, measurable results</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Case Study 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <h3>Financial Services Platform</h3>
+                                <span class="case-study-category">FinTech</span>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <div class="case-study-section">
+                                <h4><i class="fas fa-exclamation-triangle"></i> The Problem</h4>
+                                <p>A leading bank needed to modernize their legacy system to handle 10x more transactions while reducing processing time by 60%.</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4><i class="fas fa-lightbulb"></i> Our Solution</h4>
+                                <p>Developed a microservices architecture with real-time processing capabilities, implementing advanced caching and load balancing.</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4><i class="fas fa-trophy"></i> The Results</h4>
+                                <ul class="results-list">
+                                    <li><strong>300%</strong> increase in transaction capacity</li>
+                                    <li><strong>75%</strong> reduction in processing time</li>
+                                    <li><strong>99.99%</strong> uptime achieved</li>
+                                    <li><strong>$2M</strong> annual cost savings</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div class="case-study-meta">
+                                <h3>Healthcare Management System</h3>
+                                <span class="case-study-category">Healthcare</span>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <div class="case-study-section">
+                                <h4><i class="fas fa-exclamation-triangle"></i> The Problem</h4>
+                                <p>A hospital network struggled with patient data management, appointment scheduling, and communication between departments.</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4><i class="fas fa-lightbulb"></i> Our Solution</h4>
+                                <p>Built an integrated healthcare platform with patient portals, automated scheduling, and secure data sharing between departments.</p>
+                            </div>
+                            <div class="case-study-section">
+                                <h4><i class="fas fa-trophy"></i> The Results</h4>
+                                <ul class="results-list">
+                                    <li><strong>50%</strong> reduction in appointment no-shows</li>
+                                    <li><strong>40%</strong> faster patient check-in process</li>
+                                    <li><strong>100%</strong> HIPAA compliance achieved</li>
+                                    <li><strong>30%</strong> improvement in patient satisfaction</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Success Stories -->
+    <section class="client-stories py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Client Success Stories</h2>
+                    <p class="section-subtitle">Hear from our satisfied clients about their transformation journey</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Client Story 1 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="client-story-card">
+                        <div class="client-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="John Smith" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="client-content">
+                            <h4>John Smith</h4>
+                            <p class="client-position">CEO, TechStart Inc.</p>
+                            <div class="client-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="client-testimonial">"TechVision transformed our business with their innovative e-commerce solution. Our online sales increased by 200% within the first quarter."</p>
+                            <div class="client-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">200%</span>
+                                    <span class="metric-label">Sales Increase</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">3x</span>
+                                    <span class="metric-label">Faster Loading</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Story 2 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="client-story-card">
+                        <div class="client-avatar">
+                            <img src="IT_Images/our_team_UIUX.jpg" alt="Sarah Johnson" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="client-content">
+                            <h4>Sarah Johnson</h4>
+                            <p class="client-position">CTO, HealthCare Plus</p>
+                            <div class="client-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="client-testimonial">"The healthcare management system they built for us revolutionized our patient care process. Staff efficiency improved dramatically."</p>
+                            <div class="client-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">60%</span>
+                                    <span class="metric-label">Efficiency Gain</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">95%</span>
+                                    <span class="metric-label">Patient Satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Story 3 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="client-story-card">
+                        <div class="client-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Michael Chen" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="client-content">
+                            <h4>Michael Chen</h4>
+                            <p class="client-position">Founder, GreenEnergy Corp</p>
+                            <div class="client-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="client-testimonial">"Their AI-powered analytics platform helped us optimize our renewable energy production by 35%. Outstanding results!"</p>
+                            <div class="client-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">35%</span>
+                                    <span class="metric-label">Production Boost</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">$1.2M</span>
+                                    <span class="metric-label">Annual Savings</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p class="mb-4">Let's discuss how we can help bring your vision to life with innovative technology solutions.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+
+   

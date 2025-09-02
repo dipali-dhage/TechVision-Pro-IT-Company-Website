@@ -1,0 +1,430 @@
+    {% include 'navbar.html' %}
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            {% for hero in hero %}
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">{{ hero.title }}</h1>
+                        <p class="hero-subtitle">{{ hero.subtitle }}</p>
+                        <div class="hero-buttons">
+                            <a href="{{ hero.button1_link }}" class="btn btn-primary btn-lg me-3">{{ hero.button1_text }}</a>
+                            <a href="{{ hero.button2_link }}" class="btn btn-outline-light btn-lg">{{ hero.button2_text }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="{{ hero.image.url }}" alt="IT Solutions" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    
+
+    <!-- Banner Slider -->
+    <section class="banner-section py-5">
+        <div class="container">
+            {% for banner in banner %}
+
+            <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="banner-content text-center">
+                            <h2>{{ banner.slider1_title }}</h2>
+                            <p>{{ banner.slider1_subtitle }}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner-content text-center">
+                            <h2>{{ banner.slider2_title }}</h2>
+                            <p>{{ banner.slider2_subtitle }}</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner-content text-center">
+                            <h2>{{ banner.slider3_title }}</h2>
+                            <p>{{ banner.slider3_subtitle }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive IT solutions to accelerate your business growth</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>Custom websites and web applications built with modern technologies and best practices.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile Development</h4>
+                        <p>Native iOS and Android apps, plus cross-platform solutions for maximum reach.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Cloud Solutions</h4>
+                        <p>Cloud migration, infrastructure management, and scalable cloud-based applications.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Cybersecurity</h4>
+                        <p>Comprehensive security solutions to protect your digital assets and data.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Technologies We Use</h2>
+                    <p class="section-subtitle">Cutting-edge tools and frameworks for modern development</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="tech-logos">
+                        <div class="tech-logo">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-logo">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Industries We Serve</h2>
+                    <p class="section-subtitle">Tailored solutions for diverse industry needs</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="industry-card">
+                        <i class="fas fa-university"></i>
+                        <h5>Finance</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="industry-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h5>Healthcare</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="industry-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h5>Education</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="industry-card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h5>E-commerce</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="industry-card">
+                        <i class="fas fa-industry"></i>
+                        <h5>Manufacturing</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="industry-card">
+                        <i class="fas fa-truck"></i>
+                        <h5>Logistics</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <p class="section-subtitle">What sets us apart from the competition</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Expert Team</h4>
+                        <p>Experienced developers and designers with proven track records.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Fast Delivery</h4>
+                        <p>Quick turnaround times without compromising on quality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Round-the-clock technical support and maintenance services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Secure Solutions</h4>
+                        <p>Enterprise-grade security measures for all our solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Success Stories</h2>
+                    <p class="section-subtitle">Real results from our client partnerships</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <img src="IT_Images/Ecommerce_img.jpg" alt="E-commerce Platform">
+                        </div>
+                        <div class="case-study-content">
+                            <h4>E-commerce Platform</h4>
+                            <p><strong>Problem:</strong> Outdated system causing 40% cart abandonment</p>
+                            <p><strong>Solution:</strong> Modern React-based platform with optimized UX</p>
+                            <p><strong>Result:</strong> 300% increase in conversion rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <img src="IT_Images/Healthcare_Management_img.jpg" alt="Healthcare App">
+                        </div>
+                        <div class="case-study-content">
+                            <h4>Healthcare Management App</h4>
+                            <p><strong>Problem:</strong> Manual patient data management</p>
+                            <p><strong>Solution:</strong> Mobile app with cloud integration</p>
+                            <p><strong>Result:</strong> 60% reduction in administrative time</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <img src="IT_Images/Banking_Sys_img.jpg" alt="Banking System">
+                        </div>
+                        <div class="case-study-content">
+                            <h4>Digital Banking System</h4>
+                            <p><strong>Problem:</strong> Legacy system security vulnerabilities</p>
+                            <p><strong>Solution:</strong> Secure cloud-based banking platform</p>
+                            <p><strong>Result:</strong> 99.9% uptime with zero security breaches</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Testimonials from satisfied customers</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>"TechVision Pro transformed our business with their innovative web solution. The team was professional, responsive, and delivered beyond our expectations."</p>
+                                        <div class="testimonial-author">
+                                            <img src="IT_Images/client_img1.jpg" alt="John Smith" class="testimonial-avatar">
+                                            <div>
+                                                <h5>John Smith</h5>
+                                                <span>CEO, Digital Solutions Inc.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>"The mobile app they developed for us has revolutionized how we interact with our customers. Highly recommended for any business looking to go digital."</p>
+                                        <div class="testimonial-author">
+                                            <img src="IT_Images/client_img2.jpg" alt="Maria Santos" class="testimonial-avatar">
+                                            <div>
+                                                <h5>Maria Santos</h5>
+                                                <span>CTO, TechStartup</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>"Outstanding cloud migration service. They made the transition seamless and our performance improved significantly."</p>
+                                        <div class="testimonial-author">
+                                            <img src="https://via.placeholder.com/60x60/FF7A00/FFFFFF?text=DL" alt="David Lee" class="testimonial-avatar">
+                                            <div>
+                                                <h5>David Lee</h5>
+                                                <span>IT Director, Global Corp</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Partners</h2>
+                    <p class="section-subtitle">Trusted by leading companies worldwide</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="partners-carousel">
+                        <div class="partner-logo">
+                            <img src="IT_Images/partners_logo_1.jpg" alt="partner 1">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="IT_Images/partners_logo_2.jpeg" alt="Partner 2">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="IT_Images/partners_logo_3.jpeg" alt="Partner 3">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="IT_Images/partners_logo_4.jpeg" alt="Partner 4">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="IT_Images/partners_logo_1.jpg" alt="Partner 5">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="IT_Images/partners_logo_2.jpeg" alt="Partner 6">
+                        </div>
+
+
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="cta-content">
+                        <h2>Ready to Transform Your Business?</h2>
+                        <p>Let's discuss how our IT solutions can drive your success</p>
+                        <a href="contact.html" class="btn btn-primary btn-lg">Get Started Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}

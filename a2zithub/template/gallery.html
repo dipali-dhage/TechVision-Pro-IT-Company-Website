@@ -1,0 +1,368 @@
+
+    {% include 'navbar.html' %}
+
+    <!-- Page Header -->
+    <section class="page-header py-5" style="background: linear-gradient(135deg, var(--primary-blue), var(--primary-navy)); margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="page-title text-white">Our Gallery</h1>
+                    <p class="page-subtitle text-white-50">Visual showcase of our creative work and client success stories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Work</button>
+                        <button class="filter-btn" data-filter="web">Web Design</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                        <button class="filter-btn" data-filter="branding">Branding</button>
+                        <button class="filter-btn" data-filter="ui">UI/UX</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="image-gallery py-5">
+        <div class="container">
+            <div class="row" id="galleryContainer">
+                <!-- Gallery Item 1 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="web">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="E-commerce Website" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>E-commerce Platform</h4>
+                                <p>Modern web design with seamless user experience</p>
+                                <a href="#" class="gallery-link" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="mobile">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" alt="Mobile App Design" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Fitness App UI</h4>
+                                <p>Intuitive mobile interface design</p>
+                                <a href="#" class="gallery-link" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="branding">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Brand Identity" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Brand Identity Design</h4>
+                                <p>Complete brand visual identity system</p>
+                                <a href="#" class="gallery-link" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="ui">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="Dashboard Design" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Analytics Dashboard</h4>
+                                <p>Data visualization and user interface design</p>
+                                <a href="#" class="gallery-link" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="web">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Corporate Website" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Corporate Website</h4>
+                                <p>Professional business website design</p>
+                                <a href="#" class="gallery-link" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="mobile">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="Mobile Banking App" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Banking App Design</h4>
+                                <p>Secure and user-friendly mobile banking interface</p>
+                                <a href="#" class="gallery-link" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="video-gallery py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Video Showcase</h2>
+                    <p class="section-subtitle">Watch our projects come to life through video demonstrations</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Video Item 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Project Demo" class="img-fluid">
+                            <div class="video-overlay">
+                                <button class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <h4>E-commerce Platform Demo</h4>
+                            <p>Complete walkthrough of our latest e-commerce solution with advanced features and user experience highlights.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Item 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Mobile App Demo" class="img-fluid">
+                            <div class="video-overlay">
+                                <button class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <h4>Fitness App Walkthrough</h4>
+                            <p>Detailed demonstration of our fitness tracking mobile application with real-time features and user interface.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Item 3 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Dashboard Demo" class="img-fluid">
+                            <div class="video-overlay">
+                                <button class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <h4>Analytics Dashboard Tour</h4>
+                            <p>Comprehensive overview of our business analytics platform with interactive charts and real-time data visualization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Item 4 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop" alt="Cloud Solution Demo" class="img-fluid">
+                            <div class="video-overlay">
+                                <button class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <h4>Cloud Migration Success Story</h4>
+                            <p>Case study video showcasing our successful enterprise cloud migration project and its measurable results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Work Showcase -->
+    <section class="client-showcase py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Client Work Showcase</h2>
+                    <p class="section-subtitle">Featured projects from our diverse client portfolio</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Client Work 1 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="client-work-card">
+                        <div class="client-work-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="TechStart Inc." class="img-fluid">
+                            <div class="client-logo">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="client-work-content">
+                            <h4>TechStart Inc.</h4>
+                            <p class="client-work-category">E-commerce Platform</p>
+                            <p class="client-work-description">Complete digital transformation for a growing startup, resulting in 200% increase in online sales.</p>
+                            <div class="client-work-stats">
+                                <div class="stat">
+                                    <span class="stat-number">200%</span>
+                                    <span class="stat-label">Sales Increase</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">3x</span>
+                                    <span class="stat-label">Faster Loading</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Work 2 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="client-work-card">
+                        <div class="client-work-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" alt="HealthCare Plus" class="img-fluid">
+                            <div class="client-logo">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                        <div class="client-work-content">
+                            <h4>HealthCare Plus</h4>
+                            <p class="client-work-category">Mobile Healthcare App</p>
+                            <p class="client-work-description">Revolutionary healthcare management system improving patient care and staff efficiency.</p>
+                            <div class="client-work-stats">
+                                <div class="stat">
+                                    <span class="stat-number">60%</span>
+                                    <span class="stat-label">Efficiency Gain</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">95%</span>
+                                    <span class="stat-label">Patient Satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Work 3 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="client-work-card">
+                        <div class="client-work-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="GreenEnergy Corp" class="img-fluid">
+                            <div class="client-logo">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                        </div>
+                        <div class="client-work-content">
+                            <h4>GreenEnergy Corp</h4>
+                            <p class="client-work-category">AI Analytics Platform</p>
+                            <p class="client-work-description">AI-powered analytics platform optimizing renewable energy production and reducing costs.</p>
+                            <div class="client-work-stats">
+                                <div class="stat">
+                                    <span class="stat-number">35%</span>
+                                    <span class="stat-label">Production Boost</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">$1.2M</span>
+                                    <span class="stat-label">Annual Savings</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="Project Image" class="img-fluid modal-image">
+                    <div class="modal-content-text">
+                        <h4 class="modal-project-title"></h4>
+                        <p class="modal-project-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Video Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="video-container">
+                        <iframe src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Ready to Create Something Amazing?</h2>
+                    <p class="mb-4">Let's discuss your project and bring your vision to life with our creative expertise.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+
+    
