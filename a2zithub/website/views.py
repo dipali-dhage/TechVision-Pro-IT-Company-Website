@@ -1,10 +1,13 @@
 from django.shortcuts import render
-from website.admin import HeroModel
+from website.admin import HeroModel, BannerModel, ServicesModel, TechnologyModel
 # Create your views here.
 
 def index(request):
     hero = HeroModel.objects.all()
-    packages = {"hero":hero}
+    banner = BannerModel.objects.all()
+    services_data = ServicesModel.objects.all()
+    technology_data = TechnologyModel.objects.all()
+    packages = {"hero":hero, "banner":banner, "services":services_data, "technology":technology_data}
     return render(request, 'index.html', packages)
 
 # about

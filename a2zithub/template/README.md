@@ -257,5 +257,32 @@ Baneer Slider
   - slider2_subtitle
   - slider3_title
   - slider3_subtitle
+
+Services 
+  - services_title
+  - services_description
+  - services_feature1
+  - services_feature2
+  - services_feature3
+  - services_feature4
+  - services_button_text
+  - services_button_link
+  - services_logo
+  - services_check_icon
   
+
+
+   class ServicesModel(models.Model):
+    services_title = models.CharField(max_length=255)
+    services_description = models.TextField()
+    services_feature1 = models.CharField(max_length=255)
+    services_feature2 = models.CharField(max_length=255)
+    services_feature3 = models.CharField(max_length=255)
+    services_feature4 = models.CharField(max_length=255)
+    services_check_icon = models.CharField(max_length=255)
+    services_button_text = models.CharField(max_length=255)
+    services_button_link = models.URLField()
+    services_logo = models.CharField(max_length=255)
+
  -->
+
