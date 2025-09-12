@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from website.admin import HeroModel, BannerModel, ServicesModel, TechnologyModel
+from website.admin import HeroModel, BannerModel, ServicesModel, TechnologyModel, IndustriesModel, WhyChooseUsModel, CaseStudyModel, TestimonialsModel, PartnerModel, CTAModel
 # Create your views here.
 
 def index(request):
@@ -7,7 +7,17 @@ def index(request):
     banner = BannerModel.objects.all()
     services_data = ServicesModel.objects.all()
     technology_data = TechnologyModel.objects.all()
-    packages = {"hero":hero, "banner":banner, "services":services_data, "technology":technology_data}
+    industries_data = IndustriesModel.objects.all()
+    why_choose_us_data = WhyChooseUsModel.objects.all()
+    case_study_data = CaseStudyModel.objects.all()
+    testimonials_data = TestimonialsModel.objects.all()
+    partner_data = PartnerModel.objects.all()
+    cta_data = CTAModel.objects.all()
+    packages = {"hero":hero, "banner":banner, "services":services_data,
+                "technology":technology_data, "industries":industries_data, 
+                "why_choose_us":why_choose_us_data, "case_study":case_study_data,
+                "testimonials":testimonials_data, "partners":partner_data,
+                "cta":cta_data}
     return render(request, 'index.html', packages)
 
 # about

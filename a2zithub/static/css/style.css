@@ -439,6 +439,48 @@ h6 { font-size: 18px; }
     height: 100%;
 }
 
+/* New Case Studies Card (Bootstrap-based) */
+.case-studies-section .card {
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-studies-section .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.15);
+}
+
+.case-studies-section .ratio {
+    background-color: var(--light-grey);
+}
+
+.case-studies-section .badge {
+    border-radius: 12px;
+    padding: 6px 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.case-studies-section .card-body ul li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.case-studies-section .card-body ul i {
+    margin-top: 3px;
+}
+
+.case-studies-section .card-footer .btn-outline-primary {
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+    border-radius: 12px;
+}
+
+.case-studies-section .card-footer .btn-outline-primary:hover {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
 .case-study-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);

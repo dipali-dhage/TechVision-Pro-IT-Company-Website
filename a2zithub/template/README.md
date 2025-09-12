@@ -270,19 +270,61 @@ Services
   - services_logo
   - services_check_icon
   
+Technologies => 
+  - technology_title
+  - technology_description
+  - technology_icon
+  - technology_name
+
+Industries Section =>
+  - section_title 
+  - section_subtitle
+  - industry_name 
+  - industry_icon 
+
+ Why Choose Us Section => 
+  - section_title 
+  - section_subtitle 
+  - feature_title 
+  - feature_icon 
+  - feature_description 
+
+ Case Studies Section => 
+  - section_title 
+  - section_subtitle 
+  - title
+  - tag 
+  - image
+  - problem_icon 
+  - problem_text 
+  - solution_icon  
+  - solution_text 
+  - result_icon 
+  - result_text
+  - technologies 
+  - button_text
+  - project_url 
+
+ Testimonials Section =>
+  - section_title 
+  - section_subtitle 
+  - content 
+  - author_name 
+  - author_position 
+  - author_image 
+
+ Partners Section => 
+  - section_title 
+  - section_subtitle 
+  - partner_logo_img
+
+ CTA Section =>
+  - section_title 
+  - section_subtitle 
+  - button_text 
+  - button_url 
 
 
-   class ServicesModel(models.Model):
-    services_title = models.CharField(max_length=255)
-    services_description = models.TextField()
-    services_feature1 = models.CharField(max_length=255)
-    services_feature2 = models.CharField(max_length=255)
-    services_feature3 = models.CharField(max_length=255)
-    services_feature4 = models.CharField(max_length=255)
-    services_check_icon = models.CharField(max_length=255)
-    services_button_text = models.CharField(max_length=255)
-    services_button_link = models.URLField()
-    services_logo = models.CharField(max_length=255)
-
+  
  -->
 

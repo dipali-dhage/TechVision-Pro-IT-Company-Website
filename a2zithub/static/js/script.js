@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe all cards and sections for animation
-    const animateElements = document.querySelectorAll('.service-card, .feature-card, .industry-card, .case-study-card');
+    const animateElements = document.querySelectorAll('.service-card, .feature-card, .industry-card, .case-study-card, .case-studies-section .card');
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Case study card hover effects
-    const caseStudyCards = document.querySelectorAll('.case-study-card');
+    const caseStudyCards = document.querySelectorAll('.case-study-card, .case-studies-section .card');
     caseStudyCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px)';
