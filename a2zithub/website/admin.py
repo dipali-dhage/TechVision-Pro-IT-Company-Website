@@ -1,5 +1,5 @@
 from django.contrib import admin
-from website.models import HeroModel, BannerModel, ServicesModel, TechnologyModel, IndustriesModel, WhyChooseUsModel, CaseStudyModel, TestimonialsModel, PartnerModel, CTAModel
+from website.models import HeroModel, BannerModel, ServicesModel, TechnologyModel, IndustriesModel, WhyChooseUsModel, CaseStudyModel, TestimonialsModel, PartnerModel, CTAModel,MissionModel, VisionModel, OurJourneyModel, TeamModel, AchievementsAwardsModel, CertificationsModel, ValuesModel, AboutCTAModel
 # Register your models here.
 class HeroModelAdmin(admin.ModelAdmin):
     list_display = ('title', 'subtitle', 'button1_text', 'button2_text','image')
@@ -44,3 +44,36 @@ admin.site.register(CTAModel, CTAModelAdmin)
 
 # ____________About Page______________________________ About Page ______________________About Page_____________________
 
+class MissionModelAdmin(admin.ModelAdmin):
+    list_display = ('mission_icon', 'mission_title', 'mission_description')
+
+class VisionModelAdmin(admin.ModelAdmin):
+    list_display = ('vision_icon', 'vision_title', 'vision_description')
+
+class OurJourneyModelAdmin(admin.ModelAdmin):
+    list_display = ('timeline_date', 'timeline_title', 'timeline_description')
+
+class TeamModelAdmin(admin.ModelAdmin):
+    list_display = ('member_name', 'member_position', 'member_expert','member_image')
+
+class AchievementsAwardsModelAdmin(admin.ModelAdmin):
+    list_display = ('achievement_icon', 'achievement_title', 'award_name')
+
+class CertificationsModelAdmin(admin.ModelAdmin):
+    list_display = ('company_name','company_image')
+
+class ValuesModelAdmin(admin.ModelAdmin):
+    list_display = ('value_icon', 'value_title', 'value_description')
+
+class AboutCTAModelAdmin(admin.ModelAdmin):
+    list_display = ('cta_button_text', 'cta_button_url')
+
+
+admin.site.register(MissionModel, MissionModelAdmin)
+admin.site.register(VisionModel, VisionModelAdmin)  
+admin.site.register(OurJourneyModel, OurJourneyModelAdmin)
+admin.site.register(TeamModel, TeamModelAdmin)
+admin.site.register(AchievementsAwardsModel, AchievementsAwardsModelAdmin)
+admin.site.register(CertificationsModel, CertificationsModelAdmin)
+admin.site.register(ValuesModel, ValuesModelAdmin)
+admin.site.register(AboutCTAModel, AboutCTAModelAdmin)

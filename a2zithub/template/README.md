@@ -325,6 +325,271 @@ Industries Section =>
   - button_url 
 
 
+
+_______________________________________________About Page Models_____________________________________
+
+MissionVisionModel
+  - mission_icon
+  - mission_title
+  - mission_description
+  - vision_icon
+  - vision_title
+  - vision_description
+
+OurJourneyModel
+  - timeline_date
+  - timeline_title
+  - timeline_description
+
+TeamModel
+  - member_image
+  - member_name
+  - member_position
+  - member_expert
+  - member_linkedin_url
+  - member_linkedin_icon
+  - member_twitter_url
+  - member_twitter_icon
+  - member_envelope_url
+  - member_envelope_icon
+
+AchievementsAwardsModel
+  - achievement_icon
+  - achievement_title
+  - award_name
+
+CertificationsModel
+  - company_image
+  - company_name
+
+ValuesModel
+  - value_icon
+  - value_title
+  - value_description
+
+CTAModel
+  - cta_button_text
+  - cta_button_url
+
+_________________OverviewModelModels__________
+
+OverviewModel
+  - services_logo
+  - services_title
+  - services_description
+  - services_check_icon
+  - services_feature1
+  - services_feature2
+  - services_feature3
+  - services_feature4
+  - services_button_text
+  - services_button_link
+
+DetailedModel
+  - detail_title
+  - detail_description
+  - service_highlights_icon
+  - service_highlights_title
+  - service_highlights_text
+
+PricingModel
+  - pricing_title
+  - pricing_currency
+  - pricing_amount
+  - pricing_period
+  - pricing_features_icon
+  - pricing_features_description
+  - pricing_button_url
+  - pricing_button_text
+
+FAQModel
+  - accordion_header
+  - accordion_description
+
+CTAModel
+  - cta_button_text
+  - cta_button_url
+
+___________________Project Page___________
+
+ProjectFilterModel
+  - filter_name
+
+ProjectsGridModel
+  - project_image
+  - project_external_link_icon
+  - project_external_link_url
+  - project_external_search_icon
+  - project_external_search_url
+  - project_category
+  - project_title
+  - project_description
+  - project_tect_tag_1
+  - project_tect_tag_2
+  - project_tect_tag_3
+
+CaseStudiesModel
+  - case_study_icon
+  - case_study_title
+  - case_study_tag
+  - problem_icon
+  - problem_title
+  - problem_description
+  - solution_icon
+  - solution_title
+  - solution_description
+  - result_icon
+  - result_title
+  - result_value
+
+SuccessStoriesModel
+  - client_image
+  - client_name
+  - client_position
+  - client_rating_1star
+  - client_rating_2star
+  - client_rating_3star
+  - client_rating_4star
+  - client_rating_5star
+  - client_testimonial
+  - client_metric1_value
+  - client_metric1-label
+  - client_metric2_value
+  - client_metric2-label
+ 
+
+CTAModel
+  - cta_button_text
+  - cta_button_url
+___________________________Gallery Page Models__________________
+
+GalleryFilterModel
+  - Gallery_filter_name
+
+ImageGalleryModel
+  - gallery_image 
+  - image_title 
+  - image_description 
+  - image_search_icon 
+  - image_search_url
+
+VideoGalleryModel 
+  - video_image
+  - video_play_button_icon
+  - video_play_button_url
+  - video_title
+  - video_description
+
+ClientWorkModel
+  - client_work_image
+  - client_icon
+  - client_title
+  - client_work_category
+  - client_work_description
+  - client_stat1_number
+  - client_stat1_label
+  - client_stat2_number
+  - client_stat2_label
+
+CTAModel
+  - cta_button_text
+  - cta_button_url
+
+__________________Career Page Models___________________
+
+CareerPageHeaderModel
+  - header_title
+  - header_description
+  - header_button_url
+  - header_button_text
+  - header_image
+
+WhyWorkModel
+  - work_icon
+  - work_title
+  - work_description
+
+JobOpeningsModel
+  - job_title
+  - job_tag
+  - job_location_icon
+  - job_location_name
+  - job_description
+  - job_technologies
+  - job_button_text
+  - job_button_url
+
+CompanyLifeModel
+  - life_image
+  - life_title
+  - life_description
+
+ApplicationFormModel
+  - first_name
+  - last_name
+  - email
+  - phone
+  - position_applied_for
+  - cover_letter
+  - resume/cv
+  - portfolio_url
+  - submit_button_text  
+  - submit_button_url
+
+____________________Contact Page Models________________
+
+ContactInformationModel  
+  - contact_icon
+  - contact_title
+  - contact_info_1
+  - contact_info_2
+  - contact_info_3
+
+ContactFormMapModel
+  - form_title
+  - form_description
+  - form_first_name
+  - form_last_name
+  - form_email_address
+  - form_phone_no
+  - form_company_name
+  - form_service_interested
+  - form_project_budget
+  - form_project_details
+  - form_button_text
+  - form_button_url
+
+MapModel
+  - map_title
+  - map_image
+  - social_title
+  - social_description
+  - social_icon
+  - social_link
+  - social_text
+
+BusinessHoursModel
+  - hour_title
+  - hour_day
+  - hour_time
+  - emergency_title
+  - emergency_description
+  - emergency_phone_no
+  - emergency_url_phone_no
+
+ResponseTimesModel
+  - response_icon
+  - response_title
+  - response_subtitle
+
+FAQModel
+  - accordion_header
+  - accordion_description
+
+
+
+
+
   
  -->
 

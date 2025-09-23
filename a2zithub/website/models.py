@@ -74,4 +74,61 @@ class CTAModel(models.Model):
     cta_button_url = models.URLField() 
 
 
-# ______About Page____________________ About Page_____________________About Page_________________About Page_____
+# ______About Page Models____________________ About Page MODELS_____________________About Page_________________About Page_____
+
+class MissionModel(models.Model):
+    mission_title = models.CharField(max_length=255)
+    mission_description = models.TextField()
+    mission_icon = models.CharField(max_length=255, null=True, blank=True)
+
+class VisionModel(models.Model):
+    vision_title = models.CharField(max_length=255)
+    vision_description = models.TextField()
+    vision_icon = models.CharField(max_length=255, null=True, blank=True)
+
+class OurJourneyModel(models.Model):
+    timeline_date =  models.CharField(max_length=255)
+    timeline_title = models.CharField(max_length=255)
+    timeline_description = models.TextField()
+
+class TeamModel(models.Model):
+    member_image = models.ImageField(upload_to='static/team_images/')
+    member_name = models.CharField(max_length=100)
+    member_position = models.CharField(max_length=100)
+    member_expert = models.TextField(blank=True, null=True)
+    
+    member_linkedin_url = models.URLField(max_length=255, blank=True, null=True)
+    member_linkedin_icon = models.CharField(max_length=100, blank=True, null=True)  
+    
+    member_twitter_url = models.URLField(max_length=255, blank=True, null=True)
+    member_twitter_icon = models.CharField(max_length=100, blank=True, null=True)
+    
+    member_envelope_url = models.EmailField(max_length=255, blank=True, null=True)
+    member_envelope_icon = models.CharField(max_length=100, blank=True, null=True)
+
+class AchievementsAwardsModel(models.Model):
+    achievement_icon = models.CharField(max_length=100, blank=True, null=True)  
+    achievement_title = models.CharField(max_length=200)
+    award_name = models.CharField(max_length=200)
+
+class CertificationsModel(models.Model):
+    company_image = models.ImageField(upload_to='static/certifications/')
+    company_name = models.CharField(max_length=200)
+
+class ValuesModel(models.Model):
+    value_icon = models.CharField(max_length=100, blank=True, null=True)
+    value_title = models.CharField(max_length=200)
+    value_description = models.TextField()
+
+class AboutCTAModel(models.Model):
+    cta_button_text = models.CharField(max_length=100)
+    cta_button_url = models.URLField(max_length=255)
+
+  
+     
+
+
+
+
+
+

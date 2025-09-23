@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from website.admin import HeroModel, BannerModel, ServicesModel, TechnologyModel, IndustriesModel, WhyChooseUsModel, CaseStudyModel, TestimonialsModel, PartnerModel, CTAModel
+from website.admin import HeroModel, BannerModel, ServicesModel, TechnologyModel, IndustriesModel, WhyChooseUsModel, CaseStudyModel, TestimonialsModel, PartnerModel, CTAModel, MissionModel, VisionModel, OurJourneyModel, TeamModel, AchievementsAwardsModel, CertificationsModel, ValuesModel, AboutCTAModel
 # Create your views here.
 
 def index(request):
@@ -22,7 +22,17 @@ def index(request):
 
 # about
 def about(request):
-    return render(request, 'about.html')
+    mission_data = MissionModel.objects.all()
+    vision_data = VisionModel.objects.all()
+    journey_data = OurJourneyModel.objects.all()
+    team_data = TeamModel.objects.all()
+    achievement_data = AchievementsAwardsModel.objects.all()
+    certification_data = CertificationsModel.objects.all()
+    values_data = ValuesModel.objects.all()
+    cta_data = AboutCTAModel.objects.all()
+    packages = {"mission":mission_data, "vision":vision_data, "journey":journey_data, "team":team_data,
+                "achievement":achievement_data, "certification":certification_data, "values":values_data, "cta":cta_data}
+    return render(request, 'about.html', packages)
 
 # blog
 def blog(request):
